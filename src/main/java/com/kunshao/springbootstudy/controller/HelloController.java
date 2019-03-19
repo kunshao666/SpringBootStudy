@@ -5,10 +5,14 @@ import com.kunshao.springbootstudy.model.dto.UserDto;
 import com.kunshao.springbootstudy.model.form.UserForm;
 import io.swagger.annotations.*;
 import org.springframework.web.bind.annotation.*;
-
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+/**
+ * 测试使用的例子
+ * @author 王坤
+ * @date 2019-03-19
+ */
 @Api(tags = {"User 接口"})
 @RestController
 public class HelloController {
