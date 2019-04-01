@@ -6,19 +6,19 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel
 public class UserDto {
     @ApiModelProperty("用户ID")
-    private long id;
+    private Long id;
 
     @ApiModelProperty("姓名")
     private String name;
 
     @ApiModelProperty("年龄")
-    private int age;
+    private Integer age;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -30,11 +30,11 @@ public class UserDto {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 }
