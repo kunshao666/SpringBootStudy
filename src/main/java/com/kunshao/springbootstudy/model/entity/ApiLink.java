@@ -6,21 +6,19 @@ import java.util.List;
  * API获取链接数据
  */
 public interface ApiLink {
-    public List<? extends ApiLink> getApiData();
+    List<? extends ApiLink> getApiData();
 
-    public boolean hasMore();
+    boolean hasMore();
 
-    public default int getNextPage() {
-
+    default int getNextPage() {
         return 0;
     }
 
-    public String getText();
+    String getText();
 
-    public String getUrl();
+    String getUrl();
 
-    public default boolean filter() {
-
+    default boolean filter() {
         return true;
     }
 
